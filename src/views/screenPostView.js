@@ -9,6 +9,8 @@ export const postViews =(doc)=>{
   postCard.className="postCard";
   postCard.innerHTML=
   `<div id="buttons">
+  <button id="like${doc.id}" class="like">Like</button>
+  <span id="counter${doc.id}">${doc.likes}</span>
   <button id="edit${doc.post}" class="edit">Editar</button>
   <button id="delete${doc.id}" class="delete">Eliminar</button>
   <button id="save${doc.post}" class="save" style="display:none">Guardar</button>
@@ -24,15 +26,15 @@ export const postViews =(doc)=>{
   contentPost.innerHTML = `<p>${doc.post}</p>`
 
   //contenedor de elemento like
-  let likeContainer = document.createElement("div")
+/*   let likeContainer = document.createElement("div")
   likeContainer.className = "like-container"
   likeContainer.innerHTML =
     `<button id="like${doc.id}" class="like">Like</button>
-  <span id="counter${doc.id}">${doc.likes}</span>`
+  <span id="counter${doc.id}">${doc.likes}</span>` */
 
   //asignando el contenedor "contentPost y likeContainer al contenedor postCard"
   postCard.appendChild(contentPost)
-  postCard.appendChild(likeContainer)
+  // postCard.appendChild(likeContainer)
 
   //imprimiendo contenedor postCard en el div "print-here"
   document.getElementById("print-here").appendChild(postCard).innerHTML

@@ -4,16 +4,20 @@ export const profile =()=>{
     var user = firebase.auth().currentUser.displayName;
    
     let navbar = document.createElement("div")
-    navbar.className = "navbar"
+    navbar.className ="navbar"
     navbar.innerHTML = 
     `<nav>
-    <div class="logo"></div>
-    <div class="burger">
+    <div class="logo">
+    <h1>${user}</h1>
+    </div>
+    
+    <div id="burger">
     <div class="line1"></div>
     <div class="line2"></div>
     <div class="line3"></div>
     </div>
-        <ul>
+    
+        <ul id="btn-burger">
         <button id="perfil">Perfil</button>
         <button id="search-friends">Buscar Amigos</button>
         <button id="close">Cerrar Sesión</button>
@@ -23,7 +27,7 @@ export const profile =()=>{
    const profileContainer= document.createElement("div");
    profileContainer.className="profileGo"
     profileContainer.innerHTML=`
-   <div>
+   <div class="profileCard">
    <img alt="foto de perfil"></img>
    <h1>${user}</h1>
    </div>

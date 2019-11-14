@@ -72,7 +72,7 @@
         display:block;
         width: 28px;
         height: 3px;
-        background-color: blue;
+        background-color:#255FFF;
         margin: 5px;
         
     }
@@ -107,7 +107,7 @@
         height: 40px;
     }
 
-.login-content, .new-Users {
+.login-content, .new-Users, .profileGo {
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -252,11 +252,14 @@
     margin-bottom: 5px;
 }
 
+.profileGo h1 {
+    font-size: 20px;
+}
+
 }
 
 /*vista para tablets*/
 @media screen and (min-width:680px) and (max-width:1024px){
-
 
 }
 
@@ -322,7 +325,7 @@ nav {
     display:block;
     width: 28px;
     height: 3px;
-    background-color: blue;
+    background-color: #255FFF;
     margin: 5px;
     
 }
