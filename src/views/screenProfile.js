@@ -27,11 +27,10 @@ export const profile =()=>{
    const profileContainer= document.createElement("div");
    profileContainer.className="profileGo"
     profileContainer.innerHTML=`
-   <div class="profileCard">
-   <img alt="foto de perfil"></img>
+   <div class="logo">
    <h1>${user}</h1>
    </div>
-   <p id="return">volver al muro</p>
+   <button id="return">volver al muro</button>
    <h3>tu actividad</h3>`
    document.getElementById("goContainer").appendChild(navbar);
    document.getElementById("goContainer").appendChild(profileContainer);
